@@ -1,0 +1,49 @@
+@import '../../../../../../assets/scss/colors';
+
+.filter-container {
+  display: block;
+  margin: 0.75rem 0;
+  padding: 0 1rem;
+  width: 100%;
+
+  .input-name {
+    border: 1px solid #bcbcbc;
+    margin-top: 0.25rem;
+    width: 80%;
+  }
+
+  input[type="text"] {
+    border-color: #bcbcbc;
+    border-radius: 0.25rem;
+    color: #bcbcbc;
+    padding: 0.625rem;
+
+    &:hover {
+      border-color: $color-primary;
+    }
+
+    &:focus-visible {
+      border: 1px solid $color-primary;
+      outline: 0;
+    }
+  }
+
+  .label {
+    color: $color-primary;
+    display: block;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-container {
+    margin-bottom: 2.125rem;
+    margin-top: 2.125rem;
+    padding-left: 2.625rem;
+    padding-right: 2.625rem;
+
+    .input-name {
+      width: 25rem;
+    }
+  }
+}

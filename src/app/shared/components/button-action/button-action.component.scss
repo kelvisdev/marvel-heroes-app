@@ -1,26 +1,37 @@
 @import '../../../../assets/scss/colors';
 
 .pagination-container {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 3.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
 
   .button-action {
+    background: $color-primary;
+    border: 0;
+    border-radius: 0.25rem;
+    color: $color-light;
+    font-size: 1em;
+    font-weight: 400;
     height: 3.25rem;
     padding: 0.625rem;
-    width: 12.5rem;
-    font-size: 1em;
-    background: $color-primary;
-    color: $color-light;
-    font-weight: 400;
-    border-radius: 0.25rem;
-    border: 0;
     transition: 0.3s all;
+    width: 12.5rem;
 
     &:hover {
       background-color: $color-primary-hover;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pagination-container {
+    justify-content: flex-start;
+
+    padding-left: 2.625rem;
+    padding-right: 2.625rem;
   }
 }

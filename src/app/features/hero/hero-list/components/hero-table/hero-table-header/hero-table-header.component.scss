@@ -1,0 +1,49 @@
+@import '../../../../../../../assets/scss/colors';
+
+.table-header.grid {
+  display: grid;
+  height: 2.3125rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2.3125rem;
+  grid-gap: 0.625rem;
+  color: $color-light;
+  font-size: 0.875rem;
+
+  .grid-item {
+    background-color: $color-primary;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .grid-item:nth-child(1) {
+    grid-column: 1 / -1;
+    padding-left: 6rem;
+  }
+  .grid-item:nth-child(2) {
+    display: none;
+  }
+  .grid-item:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .table-header.grid {
+    grid-template-columns: repeat(2, 25%) 1fr;
+
+    .grid-item:nth-child(1) {
+      grid-column: 1;
+      padding-left: 1rem;
+    }
+
+    .grid-item:nth-child(2) {
+      display: flex;
+    }
+    .grid-item:nth-child(3) {
+      display: flex;
+    }
+  }
+}

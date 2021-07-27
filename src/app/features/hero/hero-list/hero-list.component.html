@@ -1,0 +1,23 @@
+<section class="hero-list-container">
+  <app-card-title title="Busca Marvel"
+                  [candidateName]="nameCandidate">
+  </app-card-title>
+
+  <app-card-filter [(searchTerm)]="searchTerm"
+                   (searchTermChange)="onSearchTermChange()">
+  </app-card-filter>
+
+  <ng-container *ngIf="heroList && heroList.length > 0; else listNotFound">
+    <app-hero-table [list]="heroList"
+                    (itemSelected)="handleItemSelected($event)">
+    </app-hero-table>
+
+    <app-button-action buttonText="CARREGAR MAIS"
+                       (buttonClick)="handleButtonClick()">
+    </app-button-action>
+  </ng-container>
+</section>
+
+<ng-template #listNotFound>
+  <h3 class="list-not-found">nenhum registro encontrado :( </h3>
+</ng-template>

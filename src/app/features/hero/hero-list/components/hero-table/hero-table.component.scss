@@ -1,0 +1,13 @@
+@import '../../../../../../assets/scss/colors';
+
+.table {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .table {
+    margin-left: 2.625rem;
+    margin-right: 2.625rem;
+  }
+}

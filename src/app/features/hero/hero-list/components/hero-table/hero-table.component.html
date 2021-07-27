@@ -1,0 +1,7 @@
+<div class="table">
+  <app-hero-table-header></app-hero-table-header>
+
+  <app-hero-table-body [list]="list"
+                       (itemSelected)="handleItemSelected($event)">
+  </app-hero-table-body>
+</div>

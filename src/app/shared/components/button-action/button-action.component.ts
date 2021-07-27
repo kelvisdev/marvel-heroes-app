@@ -10,9 +10,9 @@ export class ButtonActionComponent {
   buttonText?: string;
 
   @Output()
-  click = new EventEmitter<void>();
+  buttonClick = new EventEmitter<void>();
 
   public handleClick() {
-    this.click.emit();
+    this.buttonClick.emit();
   }
 }

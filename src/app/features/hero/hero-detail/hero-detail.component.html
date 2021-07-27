@@ -1,0 +1,33 @@
+<section class="hero-list-container">
+  <div class="hero-description">
+    <div class="hero-resume">
+      <img class="hero-img"
+           alt="thumbnail"
+           src="{{ hero?.thumbnail?.path}}.{{hero?.thumbnail?.extension}}" />
+    </div>
+  </div>
+
+  <div class="personagem-details">
+    <app-card-title [hideCandidateName]="true" title="Personagem"></app-card-title>
+    <p class="description">
+      {{hero?.name}}
+    </p>
+  </div>
+
+  <div class="series-details">
+    <app-card-title [hideCandidateName]="true" title="Series"> </app-card-title>
+    <p class="description" *ngIf="!hero?.series?.items?.length">--</p>
+    <p class="description" *ngFor="let serie of hero?.series?.items">{{serie.name}}</p>
+  </div>
+
+  <div class="events-details">
+    <app-card-title [hideCandidateName]="true" title="Eventos">
+    </app-card-title>
+    <p class="description" *ngIf="!hero?.events?.items?.length">--</p>
+    <p class="description" *ngFor="let serie of hero?.events?.items">{{serie.name}}</p>
+  </div>
+
+  <app-button-action buttonText='VOLTAR'
+                     (buttonClick)="handleGoBack()">
+  </app-button-action>
+</section>

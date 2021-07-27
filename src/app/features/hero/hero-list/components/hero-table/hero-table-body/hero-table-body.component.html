@@ -1,0 +1,25 @@
+<div class="table-content grid"
+     *ngFor="let item of list"
+     (click)="handleItemSelected(item)">
+
+  <div class="grid-item hero-description">
+    <img *ngIf="item.thumbnail?.path && item.thumbnail.extension"
+         src="{{ item.thumbnail.path}}.{{item.thumbnail.extension}}"
+         alt="thumbnail"
+         class="hero-img">
+    <span class="hero-title">
+      {{item.name}}
+    </span>
+  </div>
+
+  <div class="grid-item series-description">
+    <span *ngIf="!item?.series?.items?.length">--</span>
+    <span *ngFor="let serie of item?.series?.items">{{serie.name}}</span>
+  </div>
+
+  <div class="grid-item events-description">
+    <span *ngIf="!item?.events?.items?.length">--</span>
+    <span *ngFor="let event of item?.events?.items">{{event.name}}</span>
+  </div>
+
+</div>
