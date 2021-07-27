@@ -107,6 +107,13 @@
           "options": {
             "browserTarget": "marvel-heroes-app:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://kelvisdev.github.io/marvel-heroes-app/",
+            "repo": "https://github.com/kelvisdev/marvel-heroes-app/"
+          }
         }
       }
     }
