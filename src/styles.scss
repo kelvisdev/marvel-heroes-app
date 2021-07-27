@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/colors';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: $background-color;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+  }
+}
