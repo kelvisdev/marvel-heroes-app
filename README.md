@@ -1,27 +1,45 @@
-# MarvelHeroesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
 
-## Development server
+<p align="center">
+  <img alt="Layout mobile" src=".github/marvel-capa.png" width="100%">
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<h1 align="center">
+    Marvel Heroes App
+</h1>
 
-## Code scaffolding
+## 💻 Project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Uma aplicação simples que consome uma API da Marvel e faz a listagem dos Heróis, suas Series e Evetos.
 
-## Build
+## :rocket: Tecnologias
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Tecnologias utilizadas:
 
-## Running unit tests
+- HTML
+- CSS
+- Typescript
+- [Angular 12][angular]
+- [SCSS][scss]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Executar aplicação
 
-## Running end-to-end tests
+```bash
+# Clonar o repositório
+$ git clone https://github.com/kelvisdev/marvel-heroes-app.git
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Instalar dependências
+$ npm install
 
-## Further help
+# Rodar aplicação
+$ npm start
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Made with ♥ by Kelvis Borges :wave: [Get in touch!](https://www.linkedin.com/in/kelvis-borges/)
+
+[angular]: https://angular.io/
+[scss]: https://sass-lang.com/documentation/syntax
+
+
+
